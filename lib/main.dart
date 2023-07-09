@@ -6,7 +6,7 @@ final theme = ThemeData(
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
     brightness: Brightness.dark,
-    seedColor: const Color.fromARGB(255, 237, 175, 51),
+    seedColor: Colors.orange,
   ),
 );
 
@@ -21,7 +21,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      home: const TabsScreen(),
+      home: const SafeArea(child: TabsScreen()),
     );
   }
 }
